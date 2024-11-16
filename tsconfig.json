@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"alwaysStrict": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"lib": ["DOM", "DOM.Iterable", "ES2020"],
+		"module": "esnext",
+		"moduleResolution": "Bundler",
+		"noEmit": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+		"resolveJsonModule": true,
+		"strict": true,
+		"target": "ES2020",
+		"typeRoots": [
+			"./@types",
+			"./src-www/scripts/types/",
+			"./node_modules/@types",
+			"!./node_modules/@types/sass"
+		],
+		"verbatimModuleSyntax": true
+	},
+	"include": ["./src-www/**/*.ts"],
+	"exclude": ["./node_modules", "./dist"]
+}

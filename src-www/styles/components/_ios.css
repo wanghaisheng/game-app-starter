@@ -1,0 +1,16 @@
+/* Copyright (c) Nathan Bolton (GPL-3.0 OR MPL-2.0) | https://github.com/thinknathan/web-app-starter-project */
+@supports (-webkit-touch-callout: none) {
+	* {
+		/* Allow elastic scrolling on iOS */
+		-webkit-overflow-scrolling: auto;
+		/* Remove highlight on tap */
+		-webkit-tap-highlight-color: transparent;
+		/* Remove iOS callout menu */
+		-webkit-touch-callout: none;
+	}
+
+	/* Hide scrollbar on iOS */
+	*::-webkit-scrollbar {
+		width: 0;
+	}
+}
